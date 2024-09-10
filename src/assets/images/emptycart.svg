@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2021 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="4.0243in" height="4.0243in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 4587.84 4587.84"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:none}
+   ]]>
+  </style>
+   <clipPath id="id0">
+    <path d="M-0 0l4587.84 0 0 4587.84 -4587.84 0 0 -4587.84z"/>
+   </clipPath>
+    <clipPath id="id1">
+     <path d="M3.5 20.3l4196.26 526.72 62.17 3858.61 -4031.64 182.21 -226.8 -4567.54z"/>
+    </clipPath>
+    <clipPath id="id2">
+     <path d="M-0 0l4587.84 0 0 4587.84 -4587.84 0 0 -4587.84z"/>
+    </clipPath>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g>
+  </g>
+  <g style="clip-path:url(#id0)">
+   <g>
+   </g>
+   <g style="clip-path:url(#id1)">
+    <image id="empty-cart.png" x="-4019.11" y="-1620.21" width="12660.78" height="9495.58" xlink:href="emptycart_Images\emptycart_ImgID1.png"/>
+   </g>
+   <g style="clip-path:url(#id2)">
+   </g>
+  </g>
+  <polygon class="fil0" points="-0,0 4587.84,0 4587.84,4587.84 -0,4587.84 "/>
+ </g>
+</svg>
