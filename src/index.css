@@ -567,7 +567,6 @@ p{
   flex-direction: column;
   flex-wrap: wrap;
   width: 80vw;
-  height:30vw;
 }
 .recommendations{
   padding: 10px;
@@ -662,6 +661,8 @@ p{
 .categoryitem:hover::after {
   width: 0%;
 }
-
+.error{
+  height: 70vh;
+}
 
 }
