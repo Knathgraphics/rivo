@@ -8,8 +8,7 @@ import { useNavigate } from 'react-router-dom'
 
 function flutterCheckout(totalcost){
 
-  const navigate = useNavigate();
-
+ 
 
   FlutterwaveCheckout({
     public_key: "FLWPUBK_TEST-02b9b5fc6406bd4a41c3ff141cc45e93-X",
@@ -40,19 +39,8 @@ function flutterCheckout(totalcost){
   });
 }
 
-function deleteItem(array,id){
-var newCart = array.filter(item => item.productID !== id);
-if(array.length == 0){
-  localStorage.clear();
- navigate(0)
-}
-else{
-  localStorage.setItem("cart", JSON.stringify(newCart));
-navigate(0);
 
-}
 
-}
 
 
 const Checkout = () => {
@@ -61,8 +49,22 @@ const Checkout = () => {
   const [loadedCart, setLoadedCart] = useState(false);
   const [totalCost, setTotalCost] = useState(0);
     
+  const navigate = useNavigate();
 
 
+  function deleteItem(array,id){
+    var newCart = array.filter(item => item.productID !== id);
+    if(array.length == 0){
+      localStorage.clear();
+     navigate(0)
+    }
+    else{
+      localStorage.setItem("cart", JSON.stringify(newCart));
+    navigate(0);
+    }
+    }
+
+    
 useEffect(() => {
 var localCost = 0 ;  
 
