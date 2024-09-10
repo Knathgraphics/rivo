@@ -93,12 +93,12 @@ if(loadedCart == false){
           <div className="noCart">
             <div className="error" style={{display:cartLength==0? 'block': "none"}}>
               <img src={emptycart} className='emptycart' alt="" />
-              <h1 className='center'>Your cart is empty 😢<br /></h1>
+              <h2 className='center'>Your cart is empty 😢<br /></h2>
             <h4 className='center'>Maybe it’s time for a shopping spree?</h4>
             </div>
 
             <div className="checkout">
-            <div className="error" style={{display:cartLength==0? 'none': "block"}}>
+            <div style={{display:cartLength==0? 'none': "block"}}>
             <h1 className='items'>Items in your Cart</h1>
             <div className='cartorderbox'>
             <div className="cartlist">
