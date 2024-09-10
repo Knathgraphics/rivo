@@ -8,7 +8,7 @@ import Swal from "sweetalert2";
 
 const ProductDetails = () => {
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const showAlert = () => {
     const Toast = Swal.mixin({
@@ -45,8 +45,6 @@ var response = await axios.get(`https://fakestoreapi.com/products/${id}`);
     setTotalPrice(response.data.price); 
     getCategory(response.data.category);
     setLoading(false);
-    
-    
   }
 
 async function getCategory(category) {
