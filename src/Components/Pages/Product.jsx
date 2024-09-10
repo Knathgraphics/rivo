@@ -14,7 +14,7 @@ const Product = () => {
 
   return (
     <div>
-      <Loader/>
+      {/* <Loader/> */}
         <Header/>
         <ProductDetails details="Print"/>
         <Footer/>

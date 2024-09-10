@@ -17,7 +17,7 @@ useEffect(()=>{
 
   return (
     <div>
-        <Loader/>
+        {/* <Loader/> */}
         <Header/>
         <Hero/>
         <Bestselling/>

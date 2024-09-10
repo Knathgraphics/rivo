@@ -84,7 +84,7 @@ if(loadedCart == false){
 }
   return (
     <div>
-      <Loader/>
+      {/* <Loader/> */}
         <Header/>
         <div className="cartSection">
           <div className="noCart">
