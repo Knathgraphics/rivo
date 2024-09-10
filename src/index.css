@@ -562,9 +562,8 @@ p{
 }
 .cardlist{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 80vw;
-  overflow-y: scroll;
   height:30vw;
 }
 .recommendations{
