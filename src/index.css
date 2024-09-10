@@ -121,9 +121,11 @@ p{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 50px 0;
+  margin: 30px 0;
 }
 .card{
+  width: 200px;
+  height: 200px;
   text-decoration: none;
   margin: 50px;
   p{
@@ -132,6 +134,7 @@ p{
 }
 
 .cardimg{
+  width: 70%;
   margin: auto;
   display: block;
   height: 80%;
@@ -150,10 +153,11 @@ p{
   color: gray;
 }
 .cardlist{
-  display: flex;
- flex-wrap: wrap;
+  display:flex;
  justify-content: center;
- margin: 30px 0;
+ align-items: center;
+ margin: 60px 0;
+ flex-wrap: wrap;
 }
 
 .category{
@@ -557,7 +561,15 @@ p{
   margin: 20px;
 }
 .cardlist{
+  display: flex;
+  flex-direction: row;
   width: 80vw;
+  overflow-y: scroll;
+  height:30vw;
+}
+.recommendations{
+  padding: 10px;
+  margin: 10px;
 }
 .cartcard{
   padding: 10px;
@@ -613,4 +625,41 @@ p{
   justify-content: center;
   align-items: center;
 }
+.bestselling{
+  margin: 10px;
+  padding: 10px;
+}
+.card{
+  width:80%;
+  height: 150px;
+  text-decoration: none;
+  margin-top: 50px;
+  p{
+    text-align: center;
+    font-size: 9pt;
+  }
+}
+
+.cardimg{
+  width: auto;
+  margin: auto;
+  display: block;
+  height: 70%;
+}
+.category{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.categoryitem{
+  padding: 10px;
+  list-style: none;
+  display: flex;
+  cursor: pointer;
+}
+.categoryitem:hover::after {
+  width: 0%;
+}
+
+
 }

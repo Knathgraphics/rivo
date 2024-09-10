@@ -2,8 +2,8 @@ import starIcon from "../assets/images/star.png"
 
 const Card = (props) => {
   return (
-    <div className="card" onClick={props.onClick} style={{width:props.width, height:"300px"}}  >
-            <img src={props.imageUrl} style={{width:props.width}} alt="" className="cardimg" /> 
+    <div className="card" onClick={props.onClick}  >
+            <img src={props.imageUrl} alt="" className="cardimg" /> 
             <p>{props.description}</p>
             
             <div className="price">

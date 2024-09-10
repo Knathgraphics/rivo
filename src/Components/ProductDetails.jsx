@@ -1,5 +1,6 @@
-import { Link, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import starIcon from "../assets/images/star.png"
+import heroImage from "../assets/images/heroImage.png"
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Card from "./Card";
@@ -7,7 +8,6 @@ import Swal from "sweetalert2";
 
 
 const ProductDetails = () => {
-
 
   const showAlert = () => {
     const Toast = Swal.mixin({
@@ -44,6 +44,8 @@ var response = await axios.get(`https://fakestoreapi.com/products/${id}`);
     setTotalPrice(response.data.price); 
     getCategory(response.data.category);
     setLoading(false);
+    
+    
   }
 
 async function getCategory(category) {
@@ -77,7 +79,7 @@ function addItem(){
                 }
                 showAlert();
                setTimeout(()=>{
-                window.location.reload();
+                window.location = window.location.href;
                },2000);
 }
 
@@ -157,7 +159,9 @@ return <div>Loading</div>
             return;
             }
             else{
-             return <Link style={{ textDecoration: 'none', color:"#224F34" }}  key={key} to={ `/product/${object.id}`}><Card width="200px" description={object.title} amount={object.price} imageUrl={object.image} rating={object.rating.rate} /></Link>    
+             return <Card key={key} onClick={
+                ()=>{window.location = `/product/${object.id}`}
+             } width="200px" description={object.title} amount={object.price} imageUrl={object.image} rating={object.rating.rate} />    
             }
             
             })
