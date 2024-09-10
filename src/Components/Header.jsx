@@ -28,18 +28,18 @@ const Header = () => {
   return (
     <div className="header">
         <div >
-            <img className="logo" src={rivoLogo} alt="" />
+        <Link style={{ textDecoration: 'none' }} to="/"><img className="logo" src={rivoLogo} alt="" /></Link>
         </div>
         <div>
             <ul className='navlist'>
-               <Link style={{ textDecoration: 'none' }} to="/cart"><li id="navitem">Home</li></Link>
+               <Link style={{ textDecoration: 'none' }} to="/"><li id="navitem">Home</li></Link>
                 <li id="navitem">Shop</li>
                 <li id="navitem">Features</li>
                 <li id="navitem">Contact</li>
             </ul>
         </div>
         <div className="loginsection">
-            <a href="/cart"><img src={cartIcon} className="carticon" alt="" /></a>
+        <Link style={{ textDecoration: 'none' }} to="/cart"><img src={cartIcon} className="carticon" alt="" /></Link>
             <p className="itemCount">{cartLength}</p>
             <RivoButton content="Login" className="outbutton"/>
         </div>

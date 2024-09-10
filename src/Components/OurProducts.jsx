@@ -41,7 +41,7 @@ const OurProducts = () => {
         <div className='cardlist'>
           {
           caterogyArray.map((object, key)=>(
-            <Link style={{ textDecoration: 'none', color:"#224F34" }} to={`/product/${object.id}`}><Card width="200px" key={key}  description={object.title} amount={object.price} imageUrl={object.image} rating={object.rating.rate} /></Link>
+            <Link key={key} style={{ textDecoration: 'none', color:"#224F34" }} to={`/product/${object.id}`}><Card width="200px"  description={object.title} amount={object.price} imageUrl={object.image} rating={object.rating.rate} /></Link>
           ))
           }
         </div>
