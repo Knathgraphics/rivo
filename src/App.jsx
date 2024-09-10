@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Product from './Components/Pages/Product'
 import Homepage from './Components/Pages/Homepage'
 import Checkout from './Components/Pages/Checkout'
+import { useEffect } from 'react'
 
 const App = () => {
   return (

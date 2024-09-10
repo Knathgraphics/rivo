@@ -3,6 +3,7 @@ import Header from '../Header'
 import Footer from '../Footer'
 import CartCard from '../CartCard'
 import emptycart from "../../assets/images/emptycart.png"
+import Loader from './Loader'
 
 function flutterCheckout(totalcost){
   FlutterwaveCheckout({
@@ -71,10 +72,9 @@ var localCost = 0 ;
     setTotalCost(localCost);
   });
   }
- 
-
-
-
+  window.addEventListener("load",()=>{
+    document.getElementById("loader").style.display = "none";
+  });
 }, [])
 
 
@@ -84,6 +84,7 @@ if(loadedCart == false){
 }
   return (
     <div>
+      <Loader/>
         <Header/>
         <div className="cartSection">
           <div className="noCart">

@@ -426,7 +426,13 @@ margin: 0 auto;
 .delete:hover{
   background-color: rgb(152, 5, 5);
 }
-
+.loader{
+  z-index: 3;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
