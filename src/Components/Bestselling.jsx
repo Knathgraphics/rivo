@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Card from './Card'
 import axios from 'axios'
 import RivoButton from './RivoButton';
+import { Link } from 'react-router-dom';
 
 
 
@@ -27,9 +28,7 @@ const Bestselling = () => {
         <div className='cardlist'>
           {
           womenArray.map((object,key)=>(
-            <Card onClick={
-              ()=>{window.location = `/product/${object.id}`}
-           } width="200px" key={key} description={object.title} amount={object.price} imageUrl={object.image} rating={object.rating.rate} />
+           <Link style={{ textDecoration: 'none', color:"#224F34" }} to={`/product/${object.id}`}><Card width="200px" key={key} description={object.title} amount={object.price} imageUrl={object.image} rating={object.rating.rate} /></Link> 
           ))
 
           }

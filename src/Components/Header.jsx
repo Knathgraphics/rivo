@@ -2,6 +2,8 @@ import cartIcon from "../assets/images/cart.svg"
 import RivoButton from "./RivoButton"
 import rivoLogo from "../assets/images/logo.png"
 import { useState , useEffect} from "react"
+import { Link } from "react-router-dom"
+import Checkout from "./Pages/Checkout"
 
 const Header = () => {
 
@@ -30,7 +32,7 @@ const Header = () => {
         </div>
         <div>
             <ul className='navlist'>
-               <a href="/" id="navitem"><li id="navitem">Home</li></a> 
+               <Link style={{ textDecoration: 'none' }} to="/cart"><li id="navitem">Home</li></Link>
                 <li id="navitem">Shop</li>
                 <li id="navitem">Features</li>
                 <li id="navitem">Contact</li>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Card from './Card'
 import axios from 'axios'
+import { Link } from 'react-router-dom';
 
 const Cateories = ["jewelery", "men's clothing", "women's clothing"];
 
@@ -23,7 +24,7 @@ const OurProducts = () => {
 
 
  useEffect(()=>{
-  
+
  defaultCategory();
  },[])
 
@@ -40,9 +41,7 @@ const OurProducts = () => {
         <div className='cardlist'>
           {
           caterogyArray.map((object, key)=>(
-            <Card onClick={
-              ()=>{window.location = `/product/${object.id}`}
-           } width="200px" key={key}  description={object.title} amount={object.price} imageUrl={object.image} rating={object.rating.rate} />
+            <Link style={{ textDecoration: 'none', color:"#224F34" }} to={`/product/${object.id}`}><Card width="200px" key={key}  description={object.title} amount={object.price} imageUrl={object.image} rating={object.rating.rate} /></Link>
           ))
           }
         </div>
