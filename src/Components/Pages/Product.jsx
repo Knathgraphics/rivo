@@ -6,11 +6,6 @@ import Loader from './Loader'
 import { useEffect } from 'react'
 
 const Product = () => {
-  useEffect(()=>{
-    window.addEventListener("load",()=>{
-      document.getElementById("loader").style.display = "none";
-    });
-  },[]);
 
   return (
     <div>
