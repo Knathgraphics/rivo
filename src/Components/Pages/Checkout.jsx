@@ -4,8 +4,13 @@ import Footer from '../Footer'
 import CartCard from '../CartCard'
 import emptycart from "../../assets/images/emptycart.png"
 import Loader from './Loader'
+import { useNavigate } from 'react-router-dom'
 
 function flutterCheckout(totalcost){
+
+  const navigate = useNavigate();
+
+
   FlutterwaveCheckout({
     public_key: "FLWPUBK_TEST-02b9b5fc6406bd4a41c3ff141cc45e93-X",
     tx_ref: "txref-DI0NzMx13",
@@ -39,11 +44,11 @@ function deleteItem(array,id){
 var newCart = array.filter(item => item.productID !== id);
 if(array.length == 0){
   localStorage.clear();
-  window.location = window.location.href;
+ navigate(0)
 }
 else{
   localStorage.setItem("cart", JSON.stringify(newCart));
-  window.location = window.location.href;
+navigate(0);
 
 }
 
