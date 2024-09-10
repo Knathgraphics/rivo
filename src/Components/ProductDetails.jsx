@@ -1,4 +1,4 @@
-import { Link, useNavigate, useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import starIcon from "../assets/images/star.png"
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -8,7 +8,6 @@ import Swal from "sweetalert2";
 
 const ProductDetails = () => {
 
-  const navigate = useNavigate();
 
   const showAlert = () => {
     const Toast = Swal.mixin({
@@ -78,7 +77,7 @@ function addItem(){
                 }
                 showAlert();
                setTimeout(()=>{
-                navigate(0);
+                window.location.reload();
                },2000);
 }
 

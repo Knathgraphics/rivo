@@ -3,8 +3,6 @@ import Header from '../Header'
 import Footer from '../Footer'
 import CartCard from '../CartCard'
 import emptycart from "../../assets/images/emptycart.png"
-import Loader from './Loader'
-import { useNavigate } from 'react-router-dom'
 
 function flutterCheckout(totalcost){
 
@@ -48,23 +46,21 @@ const Checkout = () => {
   const [cartItems, setCartIems] = useState([]);
   const [loadedCart, setLoadedCart] = useState(false);
   const [totalCost, setTotalCost] = useState(0);
-    
-  const navigate = useNavigate();
 
 
   function deleteItem(array,id){
     var newCart = array.filter(item => item.productID !== id);
     if(array.length == 0){
       localStorage.clear();
-     navigate(0)
+     window.location.reload();
     }
     else{
       localStorage.setItem("cart", JSON.stringify(newCart));
-    navigate(0);
+    window.location.reload();
     }
     }
 
-    
+
 useEffect(() => {
 var localCost = 0 ;  
 
