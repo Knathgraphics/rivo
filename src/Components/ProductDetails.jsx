@@ -1,4 +1,4 @@
-import { useNavigate, useParams } from "react-router-dom"
+import { Link, useNavigate, useParams } from "react-router-dom"
 import starIcon from "../assets/images/star.png"
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -158,9 +158,7 @@ return <div>Loading</div>
             return;
             }
             else{
-             return <Card key={key} onClick={
-                ()=>{window.location = `/product/${object.id}`}
-             } width="200px" description={object.title} amount={object.price} imageUrl={object.image} rating={object.rating.rate} />    
+             return <Link style={{ textDecoration: 'none', color:"#224F34" }}  key={key} to={ `/product/${object.id}`}><Card width="200px" description={object.title} amount={object.price} imageUrl={object.image} rating={object.rating.rate} /></Link>    
             }
             
             })

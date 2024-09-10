@@ -608,5 +608,9 @@ p{
   color:white;
   padding: 20px;
 }
-
+.cartcard{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 }
